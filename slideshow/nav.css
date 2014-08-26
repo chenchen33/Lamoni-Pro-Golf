@@ -1,0 +1,82 @@
+﻿/******************************************
+			slideshow setting
+******************************************/
+.slideshow{
+	width:980px;
+	height:360px;
+	position:relative;
+	top:10px;
+	overflow: hidden;
+	margin:10px;
+}
+
+.slideshow a{
+	text-decoration: none;
+}
+
+#prev {
+	position: relative;
+	left: 30px; 
+	float:left;
+	top:160px;
+	z-index:2;
+}
+
+#next {
+	position: relative;
+	right: 30px; 
+	float:right;
+	top:160px;
+	z-index:2;
+}
+
+.switch-nav{
+	display:none;
+}
+
+.slideshow:hover .switch-nav{
+	display:block;
+}
+
+.switch-nav img{
+	width: 25px;
+	height:25px;
+	padding:15px;
+	border: 2px solid #fff;
+	border-radius: 30px;
+}
+
+.switch-nav img:hover {
+	background:rgba(102,102,102,0.7); 
+	cursor: pointer;
+}
+
+.dottab{
+	position:absolute;
+	top:325px;
+	left: 420px;
+	z-index:2;
+	width:160px;
+	cursor:pointer;
+}
+
+.dottab img{
+	width:20px;	
+}
+
+.event-item { 
+	height: 360px; 
+	width: 980px; 
+	left:1000px;
+	position: absolute; 
+	display:block;
+	z-index:1;
+}
+
+#item6{
+	left:0px;
+}
+
+#span6{
+	display: block;
+}

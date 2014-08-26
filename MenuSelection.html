@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Golf Balls</title>
+<link rel="icon" type="image/ico" href="pics/favicon.ico">
+<link href="golf_CSS.css" rel="stylesheet" type="text/css" />
+<script src="golfscript.js" type="text/javascript"></script>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<link href="golf_product.css" rel="stylesheet" type="text/css" />
+<script src="Resources/masonry.pkgd.min.js"></script>
+		<script type="text/javascript" src="jquery.freetile.js"></script>
+</head>
+
+<body>
+
+<div class="header">
+    
+	<div id="head"> 
+       	<table id="account">
+        	<tr>
+            	<td><a href="#">Sign Up</a></td>
+            	<td><a href="#">My Account</a></td>
+                <td><a href="#">Cart(0)</a></td>
+                <td><a href="#"><img src="pics/cart.png"/></a></td>
+            </tr>
+        </table>
+    	
+    	<div id="hdleft"> <a href="lamonigolf.html"><img src="pics/golflogo.png"/></a> </div>
+        <table id="nav">
+        	<tr>
+            	<td>Golf Balls
+                	<div class = "submenu">
+                        <span><a href="#">Titleist Pro V1</a></span>
+                        <span><a href="#">Titleist Pro V1x</a></span>
+                        <span><a href="#">NXT Tour</a></span>
+                        <span><a href="#">NXT Tour S</a></span>
+                        <span><a href="#">Velocity</a></span>
+                        <span><a href="#">DT SoLo</a></span>
+                    </div>
+                </td>
+            	<td>Golf Clubs
+                	<div class = "submenu">
+                        <span><a href="#">Men’s Clubs</a></span>
+                        <span><a href="#">Women’s Clubs</a></span>
+                        <span><a href="#">Junior’s Clubs</a></span>
+                    </div>
+                </td>
+                <td>Shoes
+                	<div class = "submenu">
+                        <span><a href="#">adidas</a></span>
+                        <span><a href="#">Ashworth</a></span>
+                        <span><a href="#">ECCO</a></span>
+                        <span><a href="#">Nike</a></span>
+                        <span><a href="#">Puma</a></span>
+                    </div>
+                </td>
+                <td>Accessories
+                	<div class = "submenu">
+                        <span><a href="#">Headwear</a></span>
+                        <span><a href="#">Bags</a></span>
+                        <span><a href="#">Gloves</a></span>
+                    </div>
+                </td>
+                <td>Local Events
+                	<div class = "submenu">
+                        <span><a href="#">Calendar</a></span>
+                        <span><a href="#">Demo Day</a></span>
+                        <span><a href="#">Lessons</a></span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <span id="searchbox"><input type="text" placeholder="Search" >
+        <img src="pics/search.png" /></a></span>
+
+    </div>
+</div>
+<!--
+<div id = "productGrid">
+<table id = "productTable">
+<tr>
+	<td><img src="pics/ball1.jpg"/><div class = "tableCat">Premium Golf Balls 1</div></td>
+	<td><img src="pics/ball2.jpg"/><div class = "tableCat">Premium Golf Balls 2</div></td>
+</tr>
+<tr>
+	<td><img src="pics/ball3.jpg"/><div class = "tableCat">Premium Golf Balls 3</div></td>
+	<td><img src="pics/ball4.jpg"/><div class = "tableCat">Premium Golf Balls 4</div></td>
+</tr>
+<tr>
+	<td><img src="pics/ball5.jpg"/><div class = "tableCat" style = "border-bottom:none;">Premium Golf Balls 5</div></td>
+	<td><img src="pics/ball6.jpg"/><div class = "tableCat" style = "border-bottom:none;">Premium Golf Balls 6</div></td>
+</tr>
+</table>
+</div>
+-->
+<div id = "itemCategory">Golf Balls</div>
+
+<div id="clickme"><em> &#8595;  Please Click On Golf Ball 1</em></div>
+
+
+<div class = "sideNavTab"><img src="pics/menu.png"/></div>
+
+<div class = "sideNav">
+    <div id = "navTitle">Result Filter</div>
+    <div class = "navSubCatTitle">By Brand</div>
+
+    <table id = "sideNavTable">
+    	<tr><td><a href="#">Titleist</a><span class = "check"></span></td></tr>
+    	<tr><td><a href="#">Callaway</a><span class = "check"></span></td></tr>
+    	<tr><td><a href="#">Wilson</a><span class = "check"></span></td></tr>
+    	<tr><td><a href="#">Bridgestone</a><span class = "check"></span></td></tr>
+    </table>
+    <br>
+    <div class = "navSubCatTitle">By Price</div>
+    <table id = "sideNavTable1">
+    	<tr><td><a href="#">$10.00-$19.99</a><span class = "check"><span/></td></tr>
+    	<tr><td><a href="#">$20.00-$29.99</a><span class = "check"><span/></td></tr>
+    	<tr><td><a href="#">$30.00-$39.99</a><span class = "check"><span/></td></tr>
+    	<tr><td><a href="#">$40.00-$49.99</a><span class = "check"><span/></td></tr>
+    </table>
+</div>
+
+<div id = "content">
+
+<div id = "tileProducts" >
+    <div class = "product" id="ball1"><img src="pics/ball1.jpg"/><div class = "tableCat">Premium Golf Balls 1</div></div>
+    <div class = "product"><img src="pics/ball2.jpg"/><div class = "tableCat">Premium Golf Balls 2</div></div>
+    <div class = "product"><img src="pics/ball3.jpg"/><div class = "tableCat">Premium Golf Balls 3</div></div>
+    <div class = "product"><img src="pics/ball4.jpg"/><div class = "tableCat">Premium Golf Balls 4</div></div>
+    <div class = "product"><img src="pics/ball5.jpg"/><div class = "tableCat" >Premium Golf Balls 5</div></div>
+    <div class = "product"><img src="pics/ball6.jpg"/><div class = "tableCat" >Premium Golf Balls 6</div></div>
+    <div class = "product"><img src="pics/ball1.jpg"/><div class = "tableCat">Premium Golf Balls 1</div></div>
+    <div class = "product"><img src="pics/ball2.jpg"/><div class = "tableCat">Premium Golf Balls 2</div></div>
+    <div class = "product"><img src="pics/ball3.jpg"/><div class = "tableCat">Premium Golf Balls 3</div></div>
+    <div class = "product"><img src="pics/ball4.jpg"/><div class = "tableCat">Premium Golf Balls 4</div></div>
+    <div class = "product"><img src="pics/ball5.jpg"/><div class = "tableCat" >Premium Golf Balls 5</div></div>
+    <div class = "product"><img src="pics/ball6.jpg"/><div class = "tableCat" >Premium Golf Balls 6</div></div>
+    </div>
+</div>
+
+
+
+<div class="footer"> 
+	<div id="foot1">
+    	<div class="feature" style="float:left;">	
+		<div id = "signup"> Sign up for free Coupons and Newsletters!</div>
+			
+		<span id="signupText"><input type="text" placeholder="Email" >
+        <img src="pics/email.png" /></a></span>
+	
+        </div>
+        
+        <div class="feature" id="connectus" style="float:right;">
+            <a href="#"  target="_blank"><img src="pics/contact/facebook.png"></a>
+        	<a href="#"  target="_blank"><img src="pics/contact/rss.png"></a>
+            <a href="#"  target="_blank"><img src="pics/contact/twitter.png" ></a>
+			<a href="#"  target="_blank"><img src="pics/contact/google_plus.png" ></a>
+			<a href="#"  target="_blank"><img src="pics/contact/youtube.png" ></a>
+        </div>
+	</div>
+	 <div id = "cpyRight">Copyright &copy; Graceland University 2014 | All Rights Reserved</div>
+</div>  
+
+
+<div class="productdetail" id="popball1">
+	<div class="productdetailbox">
+    	<img src="pics/detail/cross.png" class="crosspic">
+   		<div style="float:left; width:300px; margin:20px;">
+       		<img src="pics/detail/ball1detail1.jpg" class="bigpic" id="bigpicball1">
+            <img src="pics/detail/ball1detail1.jpg" class="thumb" id="ball1detail1">
+            <img src="pics/detail/ball1detail2.jpg" class="thumb" id="ball1detail2">
+            <img src="pics/detail/ball1detail3.jpg" class="thumb" id="ball1detail3">
+        </div>
+        <div style="float:right; width:450px;">
+        	<h2>Titleist Pro V1 Golf Balls - 12 pack</h2>
+                <h3>PRICE: $47.99 </h3>
+                <p>COLOR:
+                    <select class="colorselect">
+                        <option>Black</option>
+                        <option>Blue</option>
+                        <option>Pink</option>
+                        <option>Red</option>
+                        <option>Green</option>
+                    </select> 
+                </p>
+                <p>QUANTITY:
+                    <select class="quantityselect">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                    </select> 
+                </p>
+                <p class="addcart"> + ADD TO CART </p>
+                
+                <span class="spaninfo">Product Info</span>
+               	<span class="spanreview">Reviews</span>
+                
+                <div class="productinfo desbox">
+                	<h4>Features:</h4>
+                    <ul>
+                    	<li>Even softer feel, more distance and longer lasting.</li>
+                        <li>Exceptional distance, consistent flight</li>
+                        <li>Golf ball fitting performance comparison with best scoring performance</li>
+                    
+                    </ul>   
+                    <h4>Multi-Component Technology:</h4>
+                    <ul>
+                    	<li>Soft compression core with ZG process tech.</li>
+                        <li>Responsive ionomeric casing layer.</li>
+                        <li>Improved Urethane Elastomer.</li>
+                    
+                    </ul>  
+                    <h4>Player Benefits:</h4>
+                    <ul>
+                    	<li>Consistent ball flight.</li>
+                        <li>Drop-and-Stop™ greenside control.</li>
+                        <li>Even softer feel on all shots</li>
+                    
+                    </ul>
+                                	
+                </div>
+                
+                <div class="productreview desbox">
+                	<div class="reviewtext">
+                    	<h4>Great Ball</h4>
+                        <p class="reviewid"><em>Smooth from Willingboro, NJ | 4/3/2014 7:31 AM</em></p>
+                        <p>I love those balls. They feel so soft</p>
+                        <img src="pics/detail/ball1reivew.PNG">
+                                           
+                    </div>
+                    <div class="reviewtext">
+                    	<h4>Great Ball</h4>
+                        <p class="reviewid"><em>Smooth from Willingboro, NJ | 4/3/2014 7:31 AM</em></p>
+                        <p>I love those balls. They feel so soft</p>
+                        <img src="pics/detail/ball1reivew.PNG">
+                        
+                    </div> 
+                    <br><br>                         	
+                </div>
+                
+                
+                
+                
+        </div>
+    	
+	</div>
+</div>
+
+</body>
+</html>
