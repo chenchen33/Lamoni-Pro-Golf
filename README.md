@@ -1,4 +1,4 @@
-Lamoni-Pro-Golf
+Lamoni Pro Golf
 ===============
 
 This is the complete code set for Lamoni Pro Golf website.
